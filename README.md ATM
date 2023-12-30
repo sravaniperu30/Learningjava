@@ -1,0 +1,54 @@
+import java.util.Scanner;
+class ATM
+{
+	static Scanner sc=new Scanner(System.in);
+	private long mobile_number=7780723775;
+	private int pin =2001;
+	ATM(long mobile number,int pin)
+	{
+		int t= pin,c=0;
+		long y=mobile_number;
+		while(t>0)
+		{
+			c++;
+			t=t/10;
+		}
+		while(y>0)
+		{
+			d++;
+			y=y/10;
+
+		if(mobile_number.length()==10 &&c==4)
+		{
+			this.mobile_number=mobile_number;
+			this.pin=pin;
+		}
+	} 
+	long getmobile_number()
+	{
+		return mobile_number;
+	}
+	int getpin()
+	{
+		return pin;
+	}
+	static void display()
+	{
+		System.out.print("sravs");
+		System.out.print("Abhi");
+	}
+}
+class User
+{
+	static Scanner sc=new Scanner(System.in);
+	static void login()
+	{
+		System.out.print("Enter your mobile number:");
+		System.out.print(("Enter your pin:");
+		ATM obj=new ATM(sc.nextLong(),sc.nextInt());
+		System.out.println(obj.getmobile_number());
+		System.out.println(obj.getpin());
+	}
+	public static void main(String[] args)
+	{
+		 
