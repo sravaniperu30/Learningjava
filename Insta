@@ -1,0 +1,40 @@
+class Insta
+{
+	private String username="abhilashaa";
+	private String password="four";
+	Insta(String username,String password)
+	{
+		String t= password;
+		String y=username;
+		
+		if(y.length()==10 &&t.length()==4)
+		{
+			this.username=username;
+			this.password=password;
+		}
+	}
+        Insta()
+	{
+	
+	}
+String getusername()
+{
+	return username;
+}
+String getpassword()
+{
+	return password;
+}
+}
+class user
+{
+	public static void main(String[] args)
+	{
+	Insta obj1=new Insta();
+	Insta obj=new Insta("sraaaavani","five");
+	System.out.println(obj.getusername());
+	System.out.println(obj.getpassword());
+	System.out.println(obj1.getusername());
+	System.out.println(obj1.getpassword());
+	} 
+}
