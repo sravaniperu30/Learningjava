@@ -1,0 +1,32 @@
+class A
+{
+private int a=20;
+private int b=30;
+void seta(int a)
+{
+this.a=a;
+}
+void setb(int b)
+{
+this.b=b;
+}
+int geta()
+{
+return a;
+}
+int getb()
+{
+return b;
+}
+}
+class B
+{
+public static void main(String[] args)
+{
+A obj =new A();
+obj.seta(1);
+obj.setb(2);
+System.out.print(obj.geta());
+System.out.print(obj.getb());
+} 
+}
